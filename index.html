@@ -22,6 +22,14 @@
   <link rel="icon" href="favicon-32x32.png" type="image/png" sizes="32x32">
   
   <script src="https://kit.fontawesome.com/8f16761a97.js" crossorigin="anonymous"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-288482768"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '288482768');
+</script>
+
 </head>
 <body>
   <header class="fade-in">
@@ -48,7 +56,7 @@
       <p>
         You can use pip to install the required modules:
       </p>
-      <div class="code-container"><button class="copy-button copy-button-1" onclick="copyCode('code-1')">
+      <div class="code-container"><button class="copy-button copy-button-1" onclick="gtag('event', 'click', {'event_category': 'Button', 'event_label': 'CopyButton1'});copyCode('code-1')">
         <i class="far fa-copy"></i>
       </button>
         <pre><code id="code-1">pip install CuttApi</code></pre></div>
@@ -58,7 +66,7 @@
       <p>
         Using Cuttshort is simple. You just need to follow these steps:
       </p><div class="code-container">
-        <button class="copy-button copy-button-2" onclick="copyCode('code-2')">
+        <button class="copy-button copy-button-2" onclick="gtag('event', 'click', {'event_category': 'Button', 'event_label': 'CopyButton2'});copyCode('code-2')">
           <i class="far fa-copy"></i>
         </button>
         <pre><code id="code-2">from CuttApi import Cuttshort
@@ -75,7 +83,7 @@ short = Cuttshort(api_key)</code></pre></div>
       <p>
         Cuttshort class is supported by one more class which is a URL corrector as well as checker!
       </p>
-      <div class="code-container"><button class="copy-button copy-button-3" onclick="copyCode('code-3')">
+      <div class="code-container"><button class="copy-button copy-button-3" onclick="gtag('event', 'click', {'event_category': 'Button', 'event_label': 'CopyButton3'});copyCode('code-3')">
         <i class="far fa-copy"></i>
       </button>
       <pre><code id="code-3">from CuttApi import yurl
