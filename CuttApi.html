@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CuttApi 0.2.2.1</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="Dev.ico" type="image/x-icon">
+  <link rel="icon" href="favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="icon" href="favicon-32x32.png" type="image/png" sizes="32x32">
+  
+  <script src="https://kit.fontawesome.com/8f16761a97.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="fade-in">
+    <h1>CuttApi</h1>
+    <p class="intro">One of the best URL shortener modules for Python</p>
+  </header>
+  <main>
+    <section class="fade-in">
+      <h2>About</h2>
+      <p>
+        CuttApi is one of the best URL shortener modules for Python. It allows you to easily shorten URLs using the Cuttly URL shortener service just by entering your API key. The module takes care of the rest automatically.
+      </p>
+    </section>
+    <section class="fade-in">
+      <h2>Installation</h2>
+      <p>
+        To install CuttApi, you need to have the following requirements installed:
+      </p>
+      <ul>
+        <li>requests</li>
+        <li>urllib3</li>
+        <li>pyperclip</li>
+      </ul>
+      <p>
+        You can use pip to install the required modules:
+      </p>
+      <div class="code-container"><button class="copy-button copy-button-1" onclick="copyCode('code-1')">
+        <i class="far fa-copy"></i>
+      </button>
+        <pre><code id="code-1">pip install CuttApi</code></pre></div>
+    </section>
+    <section class="fade-in">
+      <h2>Cuttshort</h2>
+      <p>
+        Using Cuttshort is simple. You just need to follow these steps:
+      </p><div class="code-container">
+        <button class="copy-button copy-button-2" onclick="copyCode('code-2')">
+          <i class="far fa-copy"></i>
+        </button>
+        <pre><code id="code-2">from CuttApi import Cuttshort
+import stdiomask
+
+api_key = stdiomask.getpass("Enter your Cuttly API key: ")
+short = Cuttshort(api_key)</code></pre></div>
+      <p>
+        If you enter the correct API key, you can proceed to use the module. If you enter an incorrect API key, you will be prompted to enter the correct one. Once you proceed, you can continue with the URL shortening process and optionally provide custom aliases.
+      </p>
+    </section>
+    <section class="fade-in">
+      <h2>yurl</h2>
+      <p>
+        Cuttshort class is supported by one more class which is a URL corrector as well as checker!
+      </p>
+      <div class="code-container"><button class="copy-button copy-button-3" onclick="copyCode('code-3')">
+        <i class="far fa-copy"></i>
+      </button>
+      <pre><code id="code-3">from CuttApi import yurl
+a = yurl("google.com").link
+print(a)</code></pre></div>
+      <p>
+        The above code will return <code>https://www.google.com/</code> regardless of whether you provide "google.com", "http://google.com", "https://google.com", "google.com/", "http://google.com/", "https://google.com/", "www.google.com", "http://www.google.com", "https://www.google.com", "www.google.com/", "http://www.google.com/", or "https://www.google.com/".
+      </p>
+      <p>
+        Feel free to try it with other URLs as well and let CuttApi know about it!
+      </p>
+    </section>
+    <section class="fade-in">
+      <h2>Privacy</h2>
+      <p>
+        CuttApi developer respects your privacy! The data you enter does not go over the internet except to Cuttly for creations and updates. The data you enter is safely stored on your device so that you can work on links and find them easily!
+      </p>
+      <p>
+        Please keep the following points in mind:
+      </p>
+      <ul>
+        <li>Don't delete the file to ensure the best experience.</li>
+        <li>The file is stored with the name as your API key, so any manual updates by the user to this file can cause the user not being able to use the latest features.</li>
+        <li>Multiple API keys can be used on the same device.</li>
+      </ul>
+    </section>
+    <section class="fade-in">
+      <h2>Feedback</h2>
+      <p>
+        Feedback is vital for any software! You can provide your feedback at <a href="https://cutt.ly/CuttApifeedback">https://cutt.ly/CuttApifeedback</a>.
+      </p>
+    </section>
+    <section class="fade-in">
+      <h2>License</h2>
+      <p>
+        CuttApi is licensed under the <a href="https://opensource.org/licenses/MIT">MIT License</a>.
+      </p>
+      <pre>
+MIT License
+=======================
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</pre>
+    </section>
+    <section class="fade-in">
+      <h2>Contact Developer</h2>
+      <p>For any inquiries or support, please feel free to contact the developer:</p>
+      <ul>
+        <li>Name: Devraj Therani</li>
+        <li>Email: <a href="mailto:ttctlc96e@mozmail.com">ttctlc96e@mozmail.com</a></li>
+        <li>Phone: <a href="https://wa.me/918962496246">+91 8962496246</a></li>
+      </ul>
+    </section>
+    
+  </main>
+  <footer class="fade-in">
+    <p>&copy; 2023 CuttApi by Devraj Therani. All rights reserved. | License: MIT</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/devrajtherani" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.github.com/devrajtherani" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+      </div>
+  </footer>
+  <div class="toggle-button-container">
+    <div class="toggle-button" onclick="toggleLightMode()">
+      <svg class="toggle-button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M12 1C6.488 1 2 5.488 2 11s4.488 10 10 10 10-4.488 10-10S17.512 1 12 1zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z" />
+        <path d="M0 0h24v24H0z" fill="none" />
+      </svg>
+    </div>
+  </div>
+  <div class="beta-icon-container">
+    <div class="beta-icon" title="Currently in beta testing"><i class="fa-sharp fa-solid fa-flask"></i>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
