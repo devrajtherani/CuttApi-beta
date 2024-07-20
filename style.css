@@ -251,6 +251,7 @@ section.light-mode:hover {
   top: 0;
   right: 0;
   padding: 5px;
+  color: #111;
   background-color: transparent;
   border: none;
   outline: none;
